@@ -24,6 +24,5 @@ function submit(event) {
   event.preventDefault();
   console.log({ email: email.value, message: message.value });
   form.reset();
-  localStorage.removeItem(email);
-  localStorage.removeItem(message);
+  localStorage.clear();
 }
